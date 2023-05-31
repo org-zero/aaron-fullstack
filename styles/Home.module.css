@@ -1,0 +1,59 @@
+
+
+.init_h1 {
+  text-align: center;
+  font-family: "Heebo", sans-serif;
+  font-weight: 100;
+  margin: 10px 20px 0 0;
+  font-size: 52px;
+  color: rgb(53, 236, 17);
+  box-shadow: 0 0 32px rgb(41, 244, 5);
+  width: 40%;
+  background-color: rgba(19, 18, 18, 0.722);
+  
+
+  
+}
+
+.progress_bar {
+  position: relative;
+  height: 20px;
+  width: 200px;
+  background: white;
+  border: 2px solid rgb(108, 237, 52);
+  background-color: rgb(54, 55, 54);
+  box-shadow: 0 0 32px rgb(0, 255, 4);
+}
+
+.progress_fill {
+  position: absolute;
+  height: 20px;
+  width: 0%;
+  animation: progress_forward 5.7s infinite;
+  background: rgb(45, 89, 9);
+  background: linear-gradient(
+    90deg,
+    rgb(72, 212, 29) 0%,
+    rgb(60, 255, 0) 100%
+  );
+}
+
+@keyframes progress_forward {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 75%;
+  }
+  75% {
+    width: 85%;
+  }
+  100% {
+    width: 100%;
+  }
+} ;
+
+

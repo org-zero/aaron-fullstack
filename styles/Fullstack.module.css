@@ -1,0 +1,445 @@
+.fullstack_container {
+
+
+    color: rgb(241, 241, 241);
+    background-color: #212121;
+    height: 70vh;
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.505), rgba(15, 15, 15, 0.85)) , url(../public/img/compu.gif) ;
+    background-size: cover;
+    background-position: center;
+}
+.fullstack_heading {
+    margin-left: 10vh;
+}
+
+
+
+
+
+div.scrollmenu {
+    background-color: #0c0c0c;
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #82fa20;
+    color: #0c0c0c;
+    transition: 1s;
+  }
+
+
+  .grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    color: aliceblue;
+    margin: 1px;
+  }
+  .main {
+    background: rgb(26, 26, 25);
+  }
+  .side {
+    background: rgb(26, 26, 25);
+  }
+  .main,
+  .side {
+    padding: 2%;
+    border-radius: 4px
+  }
+  
+  @media(max-width: 400px){
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+
+
+/*write machibe*/
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 30%; }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    40% { border-color: rgb(138, 255, 49); }
+  }
+
+  .typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.15em solid rgb(138, 255, 49);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    margin-left: 70px;
+    font-size: 14px;
+  }
+
+  @media(max-width: 400px){
+    .typewriter {
+     font-size: 9.6px;
+     width: 90%;
+     margin-left: 14px;
+    }
+  }
+
+
+  .text {
+    margin-left: 11vh;
+    font-family: monospace;
+    width: 50%;
+  }
+
+  @media(max-width: 400px){
+    .text {
+     font-size: 10px;
+     width: 90%;
+     margin-left: 14px;
+    }
+  }
+
+
+
+
+
+
+
+
+  .button {
+    cursor: pointer;
+    font-family: "Lato", sans serif;
+    font-weight: 700;
+    font-size: 20px;
+    display: block;
+    padding: 25px 80px;
+    background: #4b970d;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    position: relative;
+    border: none;
+    outline: none;
+    transition: all 0.3s;
+    margin-left: 11vh;
+  }
+  @media(max-width: 400px){
+    .button {
+    width: 62vh;
+    margin-left: 3vh;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 90%;
+    height: 12vh;
+    margin-top: -10px;
+    }
+  }
+
+  .button:hover {
+    border: none;
+    outline: none;
+    box-shadow: 0px 5px 60px #000000;
+    transform: translateY(-5px) scale(1.05);
+  }
+  
+  .button:active {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    transform: translateY(0) scale(0.95);
+  }
+  
+  .button:after {
+    content: "";
+    border: 3px solid #7dff20;
+    border-radius: 10px;
+    position : absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    width: 40%;
+    transition: all 0.3s;
+  }
+  
+  .button:hover:after {
+    width: 70%;
+  }
+  
+  .button:active:after {
+    width: 40%;
+  }
+  
+  .button:before {
+    content: "";
+    position: absolute;
+    border : 1px solid transparent;
+    top: -15%;
+    left: 10%;
+    width: 0;
+    border-radius: 40%;
+    transform: translate3d(-50%, 0, 0);
+  }
+  
+  .button:hover:before {
+    border: 1px solid #3bff2d;
+    animation: backforth 1s ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+ .button:active:before {
+   
+  }
+  
+  @keyframes backforth {
+    0% {
+      left: 10%;
+      width: 0;
+    }
+    25% {
+      width: 50%;
+    }
+    50% {
+      left: 90%;
+      width: 0;
+    }
+    75% {
+      width: 50%;
+    }
+    100% {
+      left: 10%;
+      width: 0;
+    }
+  }
+  
+  
+
+
+
+
+  .text_back_end {
+    font-size: 16px;
+    margin-top: 22px;
+  }
+
+
+
+
+
+
+
+
+
+  
+.parent {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -0.3rem;
+}
+
+.child {
+  flex: 1 0 25%;
+  min-width: 200px;
+  padding: 0 0.5rem 1rem;
+  overflow: hidden;
+}
+
+.child > div {
+  background: #222;
+  color: #fff;
+  padding: 0.5rem;
+  height: 100%;
+  margin: 30px auto 0;
+  transition: .3s;
+}
+.child > div:hover {
+  box-shadow: 10px 1px 1px rgba(50, 255, 8, 0.4);
+  transform: scale(1.05,1.05);
+}
+.imgs {
+  width: 100%;
+  height: 60%;
+  margin-top: 10px;
+}
+
+
+.child_0 {
+  flex: 1 0 25%;
+  min-width: 200px;
+  padding: 0 0.5rem 1rem;
+  overflow: hidden;
+}
+
+.child_0 > div {
+  background: #222;
+  color: #fff;
+  padding: 0.5rem;
+  height: 70%;
+  margin: 30px auto 0;
+  transition: .3s;
+}
+.child > div:hover {
+  box-shadow: 10px 1px 1px rgba(50, 255, 8, 0.4);
+  transform: scale(1.05,1.05);
+}
+.imgs_0 {
+  width: 100%;
+  height: 70%;
+  margin-top: 10px;
+}
+/*text title animated*/
+
+
+.bg_move {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: left;
+  background: repeating-radial-gradient(circle at 100% 100%, rgba(22, 22, 22, 0.5) 4%, rgba(9, 190, 240, 0.5) 8%, rgba(51, 236, 159, 0.76) 8%, rgba(0, 0, 0, 0.5) 12%, rgba(255, 0, 191, 0.5) 12%, rgba(255, 0, 179, 0.5) 16%, rgba(95, 236, 56, 0.5) 16%, rgba(252, 143, 1, 0.8) 20%, rgba(255, 255, 9, 0.5) 20%, rgba(83, 80, 80, 0.5) 24%), repeating-radial-gradient(circle at 0% 100%, rgba(213, 2, 2, 0.7) 4%, rgba(0, 0, 0, 0.9) 8%, rgba(133, 251, 7, 0.7) 8%, rgba(0, 0, 0, 0.9) 12%, rgba(107, 216, 11, 0.7) 12%, rgba(0, 0, 0, 0.9) 16%, rgba(0, 0, 0, 0.8) 16%, rgba(144, 236, 23, 0.8) 20%, rgba(66, 228, 7, 0.982) 20%, rgba(0, 0, 0, 0.8) 24%);
+  background-size: 250px 250px;
+  background-position: 0 0;
+  -webkit-animation: stripes 3s linear infinite;
+          animation: stripes 3s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: left;
+  margin-left: 10px;
+}
+
+
+.bg_move h1 {
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+
+.bg_move i {
+  font-size: 8rem;
+}
+@media(max-width: 400px){
+  .bg_move h1{
+    font-size: 16.6px;
+  }
+}
+
+
+
+@-webkit-keyframes stripes {
+  100% {
+    background-position: 250px 0, 250px 0, 100px 0;
+  }
+}
+
+@keyframes stripes {
+  100% {
+    background-position: 250px 0, 250px 0, 100px 0;
+  }
+}
+
+/*button animated*/
+
+.caja_flash{
+  display: inline-block;
+  background: #151414;
+  width: 190px;
+  height: 60px;
+  text-align: left;
+  padding: 20px 20px;
+  font-family: Arial;
+  font-size: 20px;
+  color: white;
+  margin: 10px;
+  position: relative;
+  margin-left: -1px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.overflow{
+  overflow: hidden; 
+}
+
+/*FLASH*/
+/*Efecto como de una cámara cuando lanza el flash, jugando con la opacidad*/
+.caja_flash:hover{
+  animation: flash 0.5s 1;
+  background-color: rgb(10, 10, 10);
+}
+@keyframes flash{
+  25%, 75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+
+
+/*text image left or rigth*/
+
+div.noticia {
+  width: 100%;
+  margin: 20px auto;
+  background-color: rgb(8, 8, 8);
+  color: #fff;
+  padding: 15px;
+  margin-top: -3vh;
+}
+
+div.noticia img.izquierda {
+  float: left;
+  margin-right: 15px;
+  width: 30%;
+
+}
+
+div.noticia img.derecha {
+  float: right;
+  margin-left: 15px;
+  width: 50%;
+}
+
+div.reset {
+  clear: both;
+}
+
+@media(max-width: 600px){
+  div.noticia img.izquierda  {
+    width: 100% ;
+
+  }
+  
+}
+
+
+.img_end {
+  width: 100%;
+  margin-top: 17px;
+  height: 70vh;
+}
+
