@@ -1,19 +1,52 @@
 
 
-.init_h1 {
-  text-align: center;
-  font-family: "Heebo", sans-serif;
-  font-weight: 100;
-  margin: 10px 20px 0 0;
-  font-size: 52px;
-  color: rgb(53, 236, 17);
-  box-shadow: 0 0 32px rgb(41, 244, 5);
-  width: 40%;
-  background-color: rgba(19, 18, 18, 0.722);
-  
+.hack {
+  border-radius: 50%;
+  border: solid 7px rgb(72, 255, 0);
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 
-  
 }
+@keyframes example {
+  0%   {  top:0px;}
+  25%  {  top:0px;}
+  50%  {  top:10px;}
+  75%  {  top:10px;}
+  100% {  top:0px;}
+}
+
+
+.contenedor {
+	margin: auto;
+	display: table;
+}
+
+.text_machine { 
+	position: relative; 
+	float: left;
+	background:rgb(17, 17, 17);
+	color: #52ff0e;
+	font-size: 1.5em;
+  margin-top: 30px;
+}
+
+.text_machine span {
+    position:absolute;
+    right:0;
+    width:0;
+    background:rgb(17, 17, 17);
+    border-left: 1px solid #000;
+    animation: escribir 1s steps(40) infinite alternate;
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
+
+
 
 .progress_bar {
   position: relative;
@@ -57,3 +90,12 @@
 } ;
 
 
+@media only screen and (max-width: 600px) {
+  .init_h1 {
+
+  width: 100%;
+  }
+
+
+  
+}

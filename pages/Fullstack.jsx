@@ -11,13 +11,13 @@ export default function Fullstack () {
     
     return(
       
-        <Layout title="Fullstack Web Developer" description="Fuulstack">
+        <Layout title="Fullstack Web Developer" description="Programmer level middle">
           
           <div className={styles.fullstack_container}>
 
  <br /> <br />
   <div className={styles.typewriter}>
-    <h1>I'm Full Stack Developer Jr.</h1>
+    <h1>I'm Full Stack Developer Middle</h1>
   </div>
   <br /><br />
   <p className={styles.text}>I build things for the web. <br />
@@ -58,10 +58,11 @@ export default function Fullstack () {
        </div>
 
        <p> Hi friend, I`m web developer, I`m used to creating websites for hobbie, I very like 
-            programming in next and react. I have started when was a young on the informatic world and I take very serously me make to job!
+            programming in next and react. 
+            I have started when was a young at the  world informatic and I take very serously me make to job!
        </p>
        <p>  <br />
-        This is skills me : <br /> <br />  Javascript &rarr;   Frameworks and Libraries : Reatc, Next, Node, Typescript. <br /> <br />
+        This is skills me : <br /> <br />  Javascript &rarr;   Frameworks and Libraries : React, Next, Node, Typescript. <br /> <br />
         PHP , Python & Java - HTML & CSS- SCSS - Boopstrap -  Material UI/UX. 
        </p>
 </div>

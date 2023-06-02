@@ -418,6 +418,7 @@ div.noticia img.izquierda {
 
 }
 
+
 div.noticia img.derecha {
   float: right;
   margin-left: 15px;
@@ -431,6 +432,7 @@ div.reset {
 @media(max-width: 600px){
   div.noticia img.izquierda  {
     width: 100% ;
+    
 
   }
   
@@ -443,3 +445,12 @@ div.reset {
   height: 70vh;
 }
 
+@media(max-width: 600px){
+  .img_end  {
+    width: 100% ;
+    height: 100%;
+    
+
+  }
+  
+}
